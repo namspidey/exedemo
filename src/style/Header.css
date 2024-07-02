@@ -17,21 +17,27 @@
 
 .menu li{
     text-decoration: none;
-    margin: 1rem 2rem 0 0;
+    
     height: 100%;
     
     
 }
 
+.logout-header li{
+    margin: 1rem 2rem 0 0;
+}
+
 .menu li a,.logo a{
     text-decoration: none;
     color: black;
-    padding: 1rem;
+   
     font-family: "JetBrains Mono",monospace;
     font-size: large;
 }
 
-
+.logout-header li a,.logo a{
+    padding: 1rem;
+}
 
 .menu li:hover{
     transform: translateY(-2px);
@@ -52,3 +58,21 @@
   /* .menu a:hover {
     color: #0056b3;
   } */
+
+  .login-header{
+    margin: 1rem 1rem 0 0;
+  }
+
+  .login-header li {
+    width: 50px;
+    
+  }
+
+  
+
+  .ic{
+    width: 100%;
+    height: 30px;
+    padding-right: 5px;
+    color: rgb(0, 0, 182);
+  }

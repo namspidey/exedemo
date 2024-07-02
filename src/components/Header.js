@@ -4,6 +4,11 @@ import { useState, useEffect } from 'react';
 import { Route, Routes, Link, NavLink } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 
+import { CgProfile } from "react-icons/cg";
+import { BsChatDots } from "react-icons/bs";
+import { IoNotificationsOutline } from "react-icons/io5";
+
+
 const Header = ({ isLogin, logout,setIsLogin }) => {
     
     const navigate = useNavigate();
@@ -27,16 +32,34 @@ const Header = ({ isLogin, logout,setIsLogin }) => {
             </div>
             <div className='menu'>
                 {isLogin ? (
-                    <ul>
-                        <li onClick={handleLogout}>
+                    <ul className='login-header'>
+                        <li >
+                            <NavLink >
+                            <BsChatDots className='ic'/>
+
+
+                            </NavLink>
+                        </li>
+                        <li >
+                            <NavLink >
+                            <IoNotificationsOutline  className='ic'/>
+
+                            </NavLink>
+                        </li>
+                        <li >
+                            <NavLink >
+                            <CgProfile  className='ic' />
+                            </NavLink>
+                        </li>
+                        {/* <li onClick={handleLogout}>
                             <NavLink >
                                 Thoát
                             </NavLink>
-                        </li>
+                        </li> */}
 
 
                     </ul>) : (
-                    <ul>
+                    <ul className='logout-header'>
                         <li >
                             <NavLink className={({ isActive }) => isActive ? 'active-link' : ''} to='/login'>
                                 Đăng nhập

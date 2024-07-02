@@ -1,0 +1,25 @@
+.courses{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list-item{
+    width: 100%;
+    display: flex;
+  
+  justify-content: center;
+  
+}
+.item{
+    background-color: aqua;
+    width: 80%;
+    border-radius: 5px;
+}
