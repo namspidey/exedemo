@@ -3,7 +3,10 @@ import '../style/Detail.css';
 import { FaArrowRight } from "react-icons/fa6";
 import { FaRegCirclePlay } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
-
+import { IoMdStopwatch } from "react-icons/io";
+import { FaList } from "react-icons/fa";
+import { MdOutlinePeopleAlt } from "react-icons/md";
+import { GrCertificate } from "react-icons/gr";
 
 const CourseDetail = () => {
     return (
@@ -18,10 +21,13 @@ const CourseDetail = () => {
                     <button className='btn-banner'>Vào học ngay  <FaArrowRight />
                     </button>
                     <div className='list-tag'>
-                        <span>agreg</span>
-                        <span>bgre</span>
-                        <span>chnytrj</span>
-                        <span>dth</span>
+                        <span><IoMdStopwatch className='tag-ic'/> 17 giờ</span>
+                        <span><FaList className='tag-ic'/> 15 bài giảng</span>
+                        
+                        <span><GrCertificate className='tag-ic' /> Chứng chỉ
+                        </span>
+                        {/* <span><MdOutlinePeopleAlt className='tag-ic'/>
+                         1.068 học viên</span> */}
                     </div>
                 </div>
             </div>

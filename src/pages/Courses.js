@@ -70,7 +70,8 @@ const Courses = () => {
                                 <div className='line'></div>
                                 <div className='bot-item'>
                                     <div><FaRegClock /> 4:00:00</div>
-                                    <div><button className='btn1'>Học ngay</button></div>
+                                    <div><NavLink to='/detail' ><button className='btn1'>Học ngay</button></NavLink>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -92,7 +93,8 @@ const Courses = () => {
                                 <div className='line'></div>
                                 <div className='bot-item'>
                                     <div><FaRegClock /> 4:00:00</div>
-                                    <div><button className='btn1'>Học ngay</button></div>
+                                    <div><NavLink to='/detail' ><button className='btn1'>Học ngay</button></NavLink>
+                                        </div>
                                 </div>
                             </div>
                         </div>

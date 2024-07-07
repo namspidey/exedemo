@@ -41,23 +41,23 @@ const Chat = () => {
             </div>
             <div className='box'>
                 <div className='box-chat'>
-                    <div className='partner' data-lang='vi' data-vi='Xin chào, rất vui được làm quen với bạn' data-jp='こんにちは。はじめまして。よろしくね～' onClick={handleDivClick}>
-                    Xin chào, rất vui được làm quen với bạn
+                    <div className='partner' data-lang='jp' data-vi='Xin chào, rất vui được làm quen với bạn' data-jp='こんにちは。はじめまして。よろしくね～' onClick={handleDivClick}>
+                    こんにちは。はじめまして。よろしくね～
                     </div>
-                    <div className='self' data-lang='vi' data-vi='Chào bạn, mình cũng vậy' data-jp='こちらこそ' onClick={handleDivClick}>
-                    Chào bạn, mình cũng vậy
+                    <div className='self' data-lang='jp' data-vi='Chào bạn, mình cũng vậy' data-jp='こちらこそ' onClick={handleDivClick}>
+                    こちらこそ
                     </div>
-                    <div className='partner' data-lang='vi' data-vi='Mình tên là A, còn bạn thì sao' data-jp='私はAです。お名前は？' onClick={handleDivClick}>
-                    Mình tên là A, còn bạn thì sao
+                    <div className='partner' data-lang='jp' data-vi='Mình tên là A, còn bạn thì sao' data-jp='私はAです。お名前は？' onClick={handleDivClick}>
+                    私はAです。お名前は？
                     </div>
-                    <div className='self' data-lang='vi' data-vi='Tên mình là B' data-jp='Bです' onClick={handleDivClick}>
-                    Tên mình là B
+                    <div className='self' data-lang='jp' data-vi='Tên mình là B' data-jp='Bです' onClick={handleDivClick}>
+                    Bです
                     </div>
-                    <div className='partner' data-lang='vi' data-vi='Bạn khoẻ không?' data-jp='お元 気ですか?' onClick={handleDivClick}>
-                    Bạn khoẻ không?
+                    <div className='partner' data-lang='jp' data-vi='Bạn khoẻ không?' data-jp='お元 気ですか?' onClick={handleDivClick}>
+                    お元 気ですか?
                     </div>
-                    <div className='self' data-lang='vi' data-vi='Tôi khỏe, còn bạn?' data-jp='元気です。あなたは？' onClick={handleDivClick}>
-                    Tôi khỏe, còn bạn?
+                    <div className='self' data-lang='jp' data-vi='Tôi khỏe, còn bạn?' data-jp='元気です。あなたは？' onClick={handleDivClick}>
+                    元気です。あなたは？
                     </div>
 
                 </div>
