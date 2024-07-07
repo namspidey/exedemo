@@ -5,8 +5,9 @@ import { MdOutlinePeopleAlt } from "react-icons/md";
 import { FaRegClock } from "react-icons/fa";
 import '../style/Courses.css';
 
+
 const Courses = () => {
-    const [activeOption, setActiveOption] = useState(null);
+    const [activeOption, setActiveOption] = useState('Gợi ý');
 
     const handleClick = (option) => {
         setActiveOption(option);

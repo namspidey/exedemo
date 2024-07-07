@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import { CgProfile } from "react-icons/cg";
 import { BsChatDots } from "react-icons/bs";
 import { IoNotificationsOutline } from "react-icons/io5";
+import { FaList } from "react-icons/fa";
 
 
 const Header = ({ isLogin, logout,setIsLogin }) => {
@@ -33,8 +34,16 @@ const Header = ({ isLogin, logout,setIsLogin }) => {
             <div className='menu'>
                 {isLogin ? (
                     <ul className='login-header'>
+                        
                         <li >
-                            <NavLink >
+                            <NavLink to='/courses' >
+                            <FaList  className='ic'/>
+
+
+                            </NavLink>
+                        </li>
+                        <li >
+                            <NavLink to='/chat'>
                             <BsChatDots className='ic'/>
 
 
@@ -47,7 +56,7 @@ const Header = ({ isLogin, logout,setIsLogin }) => {
                             </NavLink>
                         </li>
                         <li >
-                            <NavLink >
+                            <NavLink to='/profile'>
                             <CgProfile  className='ic' />
                             </NavLink>
                         </li>

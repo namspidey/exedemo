@@ -1,0 +1,118 @@
+.detail{
+    margin-bottom: 5rem;
+}
+
+.banner{
+    background-color: rgb(0, 0, 164);
+    color: white;
+    background-image: radial-gradient(100% 100% at 100% 0, #5d00af 0, #000950 100%);
+    padding: 1rem;
+}
+.banner-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 17rem;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1rem;
+  
+}
+.img-detail{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    height: auto;
+    object-fit: cover;
+    margin-top: 1rem;
+   
+}
+
+.btn-banner, .btn-cmt{
+    background-image: radial-gradient(100% 100% at 100% 0, #b700ff 0, #0099ff 100%);
+    padding: 0.7rem;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-banner:active, .btn-cmt:active{
+    transform: translateY(2px);
+}
+.list-tag{
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+.list-tag span{
+    background-color: #0014aa;
+    margin-right: 1rem;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+ 
+.detail .menu{
+    display: block;
+    
+}
+
+.menu-item{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.vote-container{
+    margin: 1rem;
+    background-color: #43aef54d;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.vote h3{
+    margin-left: 0.5rem;
+}
+.star{
+   width: 30px;
+   height: 20px;
+   margin-bottom: 5px;
+}
+
+.input-area{
+    width: 93%;
+    height: 10rem;
+    border-radius: 10px;
+    margin: 1rem;
+ 
+    padding: 1rem;
+}
+
+.cmt-bar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+
+.btn-cmt{
+    margin-right: 1rem;
+}
+
+.detail .menu-item a{
+    text-decoration: none;
+    color: black;
+}
+
+.detail .content{
+    margin: 0.5rem;
+}
+
+.syl-table{
+    border: solid 1px rgb(0, 0, 92);
+    padding: 1rem;
+}
+
+.syl-table div{
+    margin-bottom: 1rem;
+    
+}

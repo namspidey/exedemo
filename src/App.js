@@ -8,6 +8,9 @@ import Register from './pages/Register';
 import Home from './pages/Home';
 import { useState, useEffect } from 'react';
 import Courses from './pages/Courses';
+import Profile from './pages/Profile';
+import CourseDetail from './pages/CourseDetail';
+import Chat from './pages/Chat';
 function App() {
   const [isLogin, setIsLogin] = useState(false)
 
@@ -30,6 +33,9 @@ function App() {
         <Route path='/login' element={<Login setIsLogin={setIsLogin}/>} />
         <Route path='/register' element={<Register/>} />
         <Route path='/courses' element={<Courses/>} />
+        <Route path='/profile' element={<Profile logout={logout}/>} />
+        <Route path='/detail' element={<CourseDetail/>}/>
+        <Route path='/chat' element={<Chat/>}/>
       </Routes>
       
       {/* <Footer/> */}
