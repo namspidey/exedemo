@@ -4,11 +4,11 @@ import { FaStar } from "react-icons/fa";
 import { MdOutlinePeopleAlt } from "react-icons/md";
 import { FaRegClock } from "react-icons/fa";
 import '../style/Courses.css';
-
-
+import { useNavigate } from 'react-router-dom';
+import { Route, Routes, Link, NavLink } from 'react-router-dom'
 const Courses = () => {
     const [activeOption, setActiveOption] = useState('Gợi ý');
-
+    const navigate = useNavigate();
     const handleClick = (option) => {
         setActiveOption(option);
     };
@@ -16,7 +16,15 @@ const Courses = () => {
     return (
         <div className='courses'>
             <div className='top'>
+                <div className='top-course'>
                 <h3>Khóa học</h3>
+                <NavLink to='/combo' >
+                <button>
+                        <h3>Mua gói</h3>
+                        </button>
+                            </NavLink>
+                </div>
+                
                 <div className='menu'>
                     <div className="menu-1">
                         <div

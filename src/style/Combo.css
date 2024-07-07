@@ -1,0 +1,67 @@
+.combo{
+
+}
+
+.combo-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px; 
+    margin: 1.5rem;
+}
+
+.combo .item{
+    border: solid blue 2px;
+    width: 90%;
+    text-align: center;
+    padding-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+   
+}
+
+.combo .item b{
+    
+    font-size: large;
+    font-weight: bold;
+}
+.combo .item p{
+    font-size: large;
+}
+
+
+.yen-ic{
+    color: rgb(2, 2, 163);
+}
+
+@keyframes blink {
+    0% { color: aqua; }
+    20% { color: rgb(0, 153, 255); }
+    40% { color: blue; }
+    80% { color: rgb(0, 153, 255); }
+    100% { color: aqua; }
+
+  }
+  
+  .blink-text {
+    margin-top: 1rem;
+    animation: blink 1s infinite;
+  }
+
+  .combo .item button{
+    background-image: radial-gradient(100% 100% at 100% 0, #b700ff 0, #0099ff 100%);
+    padding: 0.7rem;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-top: auto;
+    width: 80%;
+    font-size: large;
+  }
+
+  .combo .item button:active{
+    transform: translateY(2px);
+  }

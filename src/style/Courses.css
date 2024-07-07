@@ -1,7 +1,9 @@
 .courses{
     
 }
-
+.combo h3{
+  margin-left: 1rem;
+}
 .text{
     display: flex;
   flex-direction: column;
@@ -103,4 +105,23 @@
   border-top-left-radius: 5px;
 
   height: 10px;
+}
+
+.top-course{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.top-course button{
+  background-image: radial-gradient(100% 100% at 100% 0, #b700ff 0, #0099ff 100%);
+    padding: 0.7rem;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.top-course button:active{
+  transform: translateY(2px);
 }
