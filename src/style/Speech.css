@@ -1,0 +1,86 @@
+.speech{
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-speech{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50px;
+    background-image: radial-gradient(100% 100% at 100% 0, #b700ff 0, #0099ff 100%);
+    border-color: none;
+    border: none;
+  cursor: pointer;
+}
+
+.btn-speech:active{
+    transform: translateY(0.5rem);
+}
+
+.speech-ic{
+    width: 100%;
+    height: 4rem;
+    color: white;
+}
+
+.speech .text p{
+    font-size: x-large;
+    margin-bottom: 2rem;
+}
+
+.speech .text span{
+    font-weight: bold;
+}
+.speech .text{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.noti{
+    visibility: hidden;
+    
+    font-weight: bold;
+}
+
+.noti-ic{
+    margin-bottom: 6px;
+    font-size: larger;
+}
+
+
+.noti.show.correct {
+    visibility: visible;
+    color: rgb(4, 187, 4); /* Màu xanh lá cây cho thông báo đúng */
+  }
+  
+  .noti.show.wrong {
+    visibility: visible;
+    color: red; /* Màu đỏ cho thông báo sai */
+  }
+
+  .speech .next{
+    margin-left: auto;
+  }
+
+  .speech .next button{
+    margin-right: 1rem;
+    width: 6.2rem;
+    
+    font-size: larger;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 255, 0.685);
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  .speech .next button:active{
+    transform: translateY(2px);
+  }
+
+  .next-ic{
+    font-size: 25px;
+    margin-bottom: 3px;
+  }

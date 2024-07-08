@@ -7,8 +7,10 @@ import { IoMdStopwatch } from "react-icons/io";
 import { FaList } from "react-icons/fa";
 import { MdOutlinePeopleAlt } from "react-icons/md";
 import { GrCertificate } from "react-icons/gr";
-
+import { Route, Routes, Link, NavLink } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 const CourseDetail = () => {
+    const navigate = useNavigate();
     return (
         <div className='detail'>
             <div className='banner'>
@@ -18,12 +20,12 @@ const CourseDetail = () => {
                 <h3>Tên khóa học</h3>
                 <p>Giới thiệu...</p>
                 <div>
-                    <button className='btn-banner'>Vào học ngay  <FaArrowRight />
-                    </button>
+                <NavLink to='/pronounceCheck' ><button className='btn-banner'>Vào học ngay  <FaArrowRight />
+                    </button></NavLink>
                     <div className='list-tag'>
-                        <span><IoMdStopwatch className='tag-ic'/> 17 giờ</span>
-                        <span><FaList className='tag-ic'/> 15 bài giảng</span>
-                        
+                        <span><IoMdStopwatch className='tag-ic' /> 17 giờ</span>
+                        <span><FaList className='tag-ic' /> 15 bài giảng</span>
+
                         <span><GrCertificate className='tag-ic' /> Chứng chỉ
                         </span>
                         {/* <span><MdOutlinePeopleAlt className='tag-ic'/>
@@ -33,10 +35,10 @@ const CourseDetail = () => {
             </div>
             <div className='menu'>
                 <div className='menu-item'>
-                <a href='#intro'>Giới thiệu</a>
+                    <a href='#intro'>Giới thiệu</a>
                 </div>
                 <div className='menu-item'>
-                <a href='#syl'>Giáo trình</a>
+                    <a href='#syl'>Giáo trình</a>
                 </div>
                 <div className='menu-item'>
                     <a href='#vote'>Đánh giá</a>
@@ -46,14 +48,14 @@ const CourseDetail = () => {
             <div className='content'>
                 <div id='intro'>
                     <h3>Giới thiệu</h3>
-                    <p>Khóa học tiếng Nhật online cho người mới bắt đầu dành cho học viên đã học xong bảng chữ cái, biết cách phát âm tiếng Nhật. 
+                    <p>Khóa học tiếng Nhật online cho người mới bắt đầu dành cho học viên đã học xong bảng chữ cái, biết cách phát âm tiếng Nhật.
                         Giúp học viên nhanh chóng trau dồi hơn kiến thức nền tảng ngay tại nhà ...</p>
                 </div>
                 <div id='syl'>
                     <h3>Giáo trình</h3>
                     <div className='syl-table'>
                         <div>
-                            <FaRegCirclePlay />  Bài 1: Giới thiệu qua về các mẫu câu 
+                            <FaRegCirclePlay />  Bài 1: Giới thiệu qua về các mẫu câu
 
                         </div>
                         <div>

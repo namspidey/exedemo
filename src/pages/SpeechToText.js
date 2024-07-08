@@ -1,8 +1,17 @@
 import React, { useState } from 'react';
+import '../style/Speech.css';
+import { FaMicrophone } from "react-icons/fa";
+import { AiFillLike } from "react-icons/ai";
+import { ImSad2 } from "react-icons/im";
+import { FaAngleRight } from "react-icons/fa";
 
 const SpeechToText = () => {
-  const [text, setText] = useState('');
+  const [text, setText] = useState('. . .');
   const [isListening, setIsListening] = useState(false);
+  const [showCorrect, setShowCorrect] = useState(false);
+  const [showWrong, setShowWrong] = useState(false);
+
+  const Answer = '3';
 
   const startListening = () => {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -18,6 +27,7 @@ const SpeechToText = () => {
       const speechResult = event.results[0][0].transcript;
       setText(speechResult);
       setIsListening(false);
+      checkAnswer(speechResult);
     };
 
     recognition.onspeechend = () => {
@@ -31,12 +41,34 @@ const SpeechToText = () => {
     };
   };
 
+  const checkAnswer = (result) => {
+    if (result === Answer) {
+      setShowCorrect(true);
+      setShowWrong(false);
+    } else {
+      setShowCorrect(false);
+      setShowWrong(true);
+    }
+  };
+
   return (
-    <div>
-      <button onClick={startListening} disabled={isListening}>
-        {isListening ? 'Listening...' : 'Start Listening'}
+    <div className='speech'>
+      <div className='next' ><button>Tiếp <FaAngleRight className='next-ic'/>
+      </button></div>
+      <div className='text'>
+        <p>Đáp Án: <span>{Answer}</span></p>
+        <p>Trả lời: <span>{text}</span></p>
+
+        <p className={`noti ${showCorrect ? 'show correct' : ''}`}>
+          CHÍNH XÁC! <AiFillLike className='noti-ic' />
+        </p>
+        <p className={`noti ${showWrong ? 'show wrong' : ''}`}>
+          Chưa đúng <ImSad2 className='noti-ic' />. Hãy thử lại
+        </p>
+      </div>
+      <button onClick={startListening} disabled={isListening} className='btn-speech'>
+        <FaMicrophone className='speech-ic' />
       </button>
-      <p>Text: {text}</p>
     </div>
   );
 };
