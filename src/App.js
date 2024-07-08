@@ -12,6 +12,7 @@ import Profile from './pages/Profile';
 import CourseDetail from './pages/CourseDetail';
 import Chat from './pages/Chat';
 import Combo from './pages/Combo';
+import SpeechToText from './pages/SpeechToText';
 function App() {
   const [isLogin, setIsLogin] = useState(false)
 
@@ -38,6 +39,7 @@ function App() {
         <Route path='/detail' element={<CourseDetail/>}/>
         <Route path='/chat' element={<Chat/>}/>
         <Route path='/combo' element={<Combo/>}/>
+        <Route path='/pronounceCheck' element={<SpeechToText/>}/>
       </Routes>
       
       {/* <Footer/> */}
