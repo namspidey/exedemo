@@ -61,12 +61,13 @@
   }
 
   .speech .next{
-    margin-left: auto;
+    
   }
 
   .speech .next button{
     margin-right: 1rem;
-    width: 6.2rem;
+    margin-left: 1rem;
+    width: 6.7rem;
     
     font-size: larger;
     border: none;
@@ -83,4 +84,19 @@
   .next-ic{
     font-size: 25px;
     margin-bottom: 3px;
+  }
+
+  .next{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  .text p{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }

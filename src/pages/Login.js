@@ -37,7 +37,7 @@ const Login = ({ setIsLogin }) => {
         const response = await axios(config);
         console.log(JSON.stringify(response.data.data));
         nav("/")
-        localStorage.setItem('token', JSON.stringify(response.data.data.token))
+        localStorage.setItem('token', JSON.stringify(response.data.data.token).replace(/^"|"$/g, ''))
         localStorage.setItem('isLogin', true)
         setIsLogin(true)
         } catch (error) {
